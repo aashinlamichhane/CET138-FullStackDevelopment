@@ -1,0 +1,1207 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="A responsive CET138 Full Stack Development ePortfolio demonstrating full-stack concepts, HTML, CSS, Bootstrap and JavaScript.">
+  <meta name="author" content="Aashin Lamichhane">
+  <title>CET138 Full Stack Development ePortfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=Inter:wght@300..800&family=JetBrains+Mono:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"
+    onerror="this.onerror=null;this.href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css';">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div class="scroll-progress" aria-hidden="true"><span id="scroll-progress-bar"></span></div>
+
+  <header class="site-header sticky-top">
+    <nav class="navbar navbar-expand-xl" aria-label="Primary navigation">
+      <div class="container-xl">
+        <a class="navbar-brand brand-lockup" href="#top" aria-label="CET138 portfolio home">
+          <span class="brand-mark" aria-hidden="true">FS</span>
+          <span>
+            <strong>CET138</strong>
+            <small>Development Portfolio</small>
+          </span>
+        </a>
+
+        <div class="d-flex align-items-center gap-2 ms-auto d-xl-none">
+          <button type="button" class="btn btn-theme-toggle" id="theme-toggle-btn-mobile" aria-label="Toggle theme">
+            <i data-lucide="sun" class="theme-icon-light"></i>
+            <i data-lucide="moon" class="theme-icon-dark"></i>
+          </button>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primary-navigation"
+            aria-controls="primary-navigation" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="primary-navigation">
+          <ul class="navbar-nav ms-auto align-items-xl-center">
+            <li class="nav-item"><a class="nav-link" href="#full-stack">Full Stack</a></li>
+            <li class="nav-item"><a class="nav-link" href="#html">HTML</a></li>
+            <li class="nav-item"><a class="nav-link" href="#css">CSS</a></li>
+            <li class="nav-item"><a class="nav-link" href="#bootstrap">Bootstrap</a></li>
+            <li class="nav-item"><a class="nav-link" href="#javascript">JavaScript</a></li>
+          </ul>
+          <div class="d-none d-xl-flex align-items-center me-3">
+            <button type="button" class="btn btn-theme-toggle" id="theme-toggle-btn-desktop" aria-label="Toggle theme">
+              <i data-lucide="sun" class="theme-icon-light"></i>
+              <i data-lucide="moon" class="theme-icon-dark"></i>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="top" aria-labelledby="portfolio-title">
+      <div class="hero-orb hero-orb-cyan" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb-pink" aria-hidden="true"></div>
+      <div class="container-xl hero-grid">
+        <div class="hero-copy reveal-on-scroll">
+          <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> CET138 Assignment 1</p>
+          <h1 id="portfolio-title">Full Stack Development</h1>
+          <p class="hero-lead">I created this website where I have simply explained the knowledge I have about Fullstack. You can
+            exlpore my portfolio site.</p>
+          <div class="hero-actions">
+            <a class="btn btn-explore-liquid btn-lg" href="#full-stack">Explore the portfolio</a>
+            <a class="btn btn-outline-dark btn-lg" href="#portfolio-overview">See learning outcomes</a>
+          </div>
+          <div class="tech-stack-badges mt-4">
+            <span class="tech-badge"><i data-lucide="file-code"></i> HTML5</span>
+            <span class="tech-badge"><i data-lucide="palette"></i> CSS3</span>
+            <span class="tech-badge"><i data-lucide="layout"></i> Bootstrap 5</span>
+            <span class="tech-badge"><i data-lucide="braces"></i> JS (ES6+)</span>
+          </div>
+        </div>
+
+        <aside class="hero-panel reveal-on-scroll" aria-label="Portfolio overview" id="portfolio-overview">
+          <div class="hero-panel-header">
+            <span class="status-pill"><i data-lucide="sparkles" class="status-icon"></i> Interactive portfolio</span>
+            <span class="hero-panel-code">HTML · CSS · JS</span>
+          </div>
+
+        
+          <div class="student-profile-card">
+            <div class="avatar-ring-container">
+              <div class="avatar-ring-gradient"></div>
+              <div class="student-avatar-placeholder">
+                <img src="student_avatar.jpg" alt="Aashin Lamichhane avatar" class="student-avatar-img">
+              </div>
+            </div>
+            <div class="student-profile-info">
+              <h3>Aashin Lamichhane</h3>
+              <p class="student-email"><i data-lucide="mail"></i> <a
+                  href="mailto:ctit25a.asn@ismt.edu.np">ctit25a.asn@ismt.edu.np</a></p>
+              <p class="student-social"><i data-lucide="instagram"></i> <a
+                  href="https://www.instagram.com/aashinlamichhane?igsh=MThtZWpzMG03bzJ0bQ==" target="_blank"
+                  rel="noopener noreferrer">@aashinlamichhane</a></p>
+              <div class="student-tags">
+                <span class="badge badge-module"><i data-lucide="book-open"></i> CET138 Student</span>
+                <span class="badge badge-status"><i data-lucide="layers"></i> Full Stack Architect</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="divider-line"></div>
+
+          <h2>Learning Core Topics</h2>
+          <ol class="topic-list">
+            <li><a href="#full-stack"><span class="topic-num"><i data-lucide="layers"></i></span> Full Stack
+                Architecture</a></li>
+            <li><a href="#html"><span class="topic-num"><i data-lucide="file-code-2"></i></span> HTML / HTML5</a></li>
+            <li><a href="#css"><span class="topic-num"><i data-lucide="smartphone"></i></span> Responsive CSS</a></li>
+            <li><a href="#bootstrap"><span class="topic-num"><i data-lucide="package"></i></span> Bootstrap</a></li>
+            <li><a href="#javascript"><span class="topic-num"><i data-lucide="terminal"></i></span> JavaScript</a></li>
+          </ol>
+          <div class="palette-preview" aria-label="Portfolio colour palette">
+            <span class="swatch swatch-cyan"><span class="visually-hidden">Electric Cyan #00F7FF</span></span>
+            <span class="swatch swatch-aqua"><span class="visually-hidden">Soft Aqua #B0FFFA</span></span>
+            <span class="swatch swatch-magenta"><span class="visually-hidden">Hot Magenta #FF0087</span></span>
+            <span class="swatch swatch-pink"><span class="visually-hidden">Soft Pink #FF7DB0</span></span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    
+    <section class="portfolio-section section-full-stack" id="full-stack" aria-labelledby="full-stack-title">
+      <div class="container-xl">
+        <header class="section-heading reveal-on-scroll">
+          <div class="section-number" aria-hidden="true">01</div>
+          <div>
+            <p class="section-kicker">Architecture and data flow</p>
+            <h2 id="full-stack-title">What is Full Stack Development?</h2>
+            <p class="section-intro">Full-stack development connects the interface a person sees with the server-side
+              logic and data that makes an application useful.</p>
+          </div>
+        </header>
+
+        <div class="concept-grid reveal-on-scroll">
+          <article class="concept-card">
+            <span class="concept-icon" aria-hidden="true">UI</span>
+            <h3>Frontend</h3>
+            <p>Frontend is the part of a website that users can see and interact with. 
+              It includes page layout, text, images, buttons, menus, forms and animations.
+               Frontend development mainly uses HTML to create the structure, CSS to design the page and JavaScript to add interactivity.</p>
+          </article>
+          <article class="concept-card">
+            <span class="concept-icon" aria-hidden="true">API</span>
+            <h3>Backend</h3>
+            <p>Backend is the part of a website that works behind the scenes. 
+              It receives requests from the frontend, processes information, applies the website’s logic and sends a response back.
+               It can also manage user accounts, login systems, permissions and communication with the database.</p>
+          </article>
+          <article class="concept-card">
+            <span class="concept-icon" aria-hidden="true">DB</span>
+            <h3>Database</h3>
+            <p>Database is used to store and organise the website’s information. 
+              This can include user details, products, messages, passwords and other records. 
+              The backend communicates with the database to add, find, update or delete information safely.</p>
+          </article>
+        </div>
+
+        <div class="learning-copy reveal-on-scroll">
+          <div>
+           <h3>How the Layers Work Together</h3>
+
+<p>
+  The frontend, backend, and database work together to make any website function.
+  When a user performs an action, such as logging in or submitting a form, the
+  frontend sends a request to the backend. The backend processes the request and
+  may use the database to store or retrieve information. It then sends the result
+  back to the frontend, where it is displayed to the user.
+</p>
+
+<p>
+  For example: A user clicks “Login,” the frontend sends the login details, the
+  backend checks them using the database, and the frontend displays whether the
+  login was successful.
+</p>
+          </div>
+          <aside class="learning-note">
+            <h3>My Understanding</h3>
+<p>
+  My understanding is that frontend, backend, and database work together to
+  make a complete website. The frontend is what the user sees and interacts with.
+  When the user performs an action, the frontend sends a request to the backend.
+  The backend processes the request and communicates with the database to store
+  or retrieve information. The result is then sent back to the frontend and shown
+  to the user.
+</p>
+          </aside>
+        </div>
+
+        <article class="demo-shell reveal-on-scroll" id="demo-full-stack" aria-labelledby="full-stack-demo-title">
+          <div class="demo-heading">
+            <div>
+              <p class="demo-label">Working demonstration · simulated architecture</p>
+              <h3 id="full-stack-demo-title">Request and Response Journey</h3>
+              <p>This static demonstration visualises a typical data request. It does not connect to a real server or
+                database.</p>
+            </div>
+            <div class="demo-actions">
+              <button class="btn btn-brand-primary" id="run-request-demo" type="button">Send request</button>
+              <button class="btn btn-outline-dark" id="reset-request-demo" type="button">Reset</button>
+            </div>
+          </div>
+
+          <div class="request-status" aria-live="polite" aria-atomic="true">
+            <span class="status-indicator" id="request-status-indicator" aria-hidden="true"></span>
+            <span id="request-status-text">Ready: select “Send request” to begin the simulation.</span>
+          </div>
+
+          <div class="journey-grid" aria-label="Simulated client-server request path">
+            <article class="journey-node" data-journey-node="client">
+              <span class="node-step">1</span>
+              <span class="node-symbol" aria-hidden="true"><i data-lucide="monitor"></i></span>
+              <h4>Browser / Client</h4>
+              <p>The user asks to load a profile.</p>
+            </article>
+            <div class="journey-arrow-wrap" aria-hidden="true">
+              <i data-lucide="arrow-right" class="journey-arrow-icon"></i>
+            </div>
+            <article class="journey-node" data-journey-node="frontend">
+              <span class="node-step">2</span>
+              <span class="node-symbol" aria-hidden="true"><i data-lucide="code-2"></i></span>
+              <h4>Front End</h4>
+              <p>JavaScript creates an HTTP request.</p>
+            </article>
+            <div class="journey-arrow-wrap" aria-hidden="true">
+              <i data-lucide="arrow-right" class="journey-arrow-icon"></i>
+            </div>
+            <article class="journey-node" data-journey-node="server">
+              <span class="node-step">3</span>
+              <span class="node-symbol" aria-hidden="true"><i data-lucide="cpu"></i></span>
+              <h4>API / Server</h4>
+              <p>The server validates and processes it.</p>
+            </article>
+            <div class="journey-arrow-wrap" aria-hidden="true">
+              <i data-lucide="arrow-right" class="journey-arrow-icon"></i>
+            </div>
+            <article class="journey-node" data-journey-node="database">
+              <span class="node-step">4</span>
+              <span class="node-symbol" aria-hidden="true"><i data-lucide="database"></i></span>
+              <h4>Database</h4>
+              <p>The matching record is retrieved.</p>
+            </article>
+          </div>
+
+          <div class="response-window" id="response-window" aria-label="Simulated browser response">
+            <div class="response-window-bar" aria-hidden="true"><span></span><span></span><span></span></div>
+            <div class="response-empty" id="response-empty-state">
+              <strong>No response yet</strong>
+              <span>The returned profile will appear here.</span>
+            </div>
+            <div class="profile-result" id="profile-result" hidden>
+              <div class="profile-avatar" aria-hidden="true">
+                <img src="student_avatar.jpg" alt="Aashin Lamichhane avatar" class="profile-avatar-img">
+              </div>
+              <div>
+                <span class="response-badge"><i data-lucide="check-circle" class="badge-icon"></i> 200 OK · JSON
+                  rendered</span>
+                <h4>Aashin Lamichhane</h4>
+                <p>ctit25a.asn@ismt.edu.np</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="code-previewer-container mt-4">
+            <div class="code-toolbar"><span>JavaScript</span><button type="button" class="copy-code"
+                data-copy-target="full-stack-code-snippet">Copy code</button></div>
+            <pre><code id="full-stack-code-snippet"><span class="token-keyword">const</span> stages = [<span class="token-string">"client"</span>, <span class="token-string">"frontend"</span>, <span class="token-string">"server"</span>, <span class="token-string">"database"</span>];
+
+<span class="token-keyword">for</span> (<span class="token-keyword">const</span> stage <span class="token-keyword">of</span> stages) {
+  <span class="token-function">activateJourneyNode</span>(stage);
+  <span class="token-keyword">await</span> <span class="token-function">wait</span>(<span class="token-number">700</span>);
+}</code></pre>
+          </div>
+
+          <div class="explanation-panel mt-3" id="full-stack-explanation" aria-live="polite" aria-atomic="true">
+            <div class="explanation-panel-heading">
+              <span class="explanation-badge">Live explanation</span>
+              <strong>What is happening?</strong>
+            </div>
+            <dl class="explanation-grid">
+              <div>
+                <dt>Action</dt>
+                <dd data-explanation="action">The demonstration is ready.</dd>
+              </div>
+              <div>
+                <dt>What changed?</dt>
+                <dd data-explanation="change">No layer is active yet.</dd>
+              </div>
+              <div>
+                <dt>How was it implemented?</dt>
+                <dd data-explanation="implementation">JavaScript will add and remove state classes in sequence.</dd>
+              </div>
+              <div>
+                <dt>Concept demonstrated</dt>
+                <dd data-explanation="concept">The client-server request and response cycle.</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="reflection-row">
+            <div>
+              <h4>What I learned</h4>
+              <p>This example helped me understand that a visible page update may depend on several separate layers,
+                each with its own responsibility and possible failure points.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+#html
+    <section class="portfolio-section section-html" id="html" aria-labelledby="html-title">
+      <div class="container-xl">
+        <header class="section-heading reveal-on-scroll">
+          <div class="section-number" aria-hidden="true">02</div>
+          <div>
+            <p class="section-kicker">Structure and meaning</p>
+            <h2 id="html-title">HTML</h2>
+            <p class="section-intro">HTML describes the content and meaning of a page so that browsers, search engines
+              and assistive technologies can understand it.</p>
+          </div>
+        </header>
+
+        <div class="learning-copy reveal-on-scroll">
+          <div>
+            <h3>Building a meaningful document</h3>
+            <p>HTML stands for <strong>HyperText Markup Language</strong>. A page is built from elements, normally
+              written with opening and closing tags. Attributes add information such as a link destination, input type
+              or accessible name. Correct nesting produces a logical document tree that the browser exposes as the DOM.
+            </p>
+            <p>Semantic elements such as <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>,
+              <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code> and <code>&lt;footer&gt;</code> describe a
+              region’s purpose. Headings create an outline; paragraphs, lists and tables organise information; links
+              connect resources; images need meaningful alternative text; and form labels connect instructions to
+              controls. HTML should describe the content before CSS changes its appearance or JavaScript adds behaviour.
+            </p>
+          </div>
+          <aside class="learning-note">
+            <h3>Why semantics matter</h3>
+            <p>I use the most meaningful element available instead of choosing elements for their default appearance.
+              This improves maintainability and gives keyboard and screen-reader users a clearer structure.</p>
+          </aside>
+        </div>
+
+        <article class="demo-shell reveal-on-scroll" id="demo-html" aria-labelledby="html-demo-title">
+          <div class="demo-heading">
+            <div>
+              <p class="demo-label">Working demonstration · semantic structure</p>
+              <h3 id="html-demo-title">Semantic HTML Explorer</h3>
+              <p>Select an element to highlight its position, purpose, syntax and accessibility value.</p>
+            </div>
+          </div>
+
+          <div class="semantic-explorer">
+            <div class="semantic-controls" role="group" aria-label="Choose a semantic HTML element">
+              <button type="button" class="semantic-button is-selected" data-semantic-target="header"
+                aria-pressed="true">&lt;header&gt;</button>
+              <button type="button" class="semantic-button" data-semantic-target="nav"
+                aria-pressed="false">&lt;nav&gt;</button>
+              <button type="button" class="semantic-button" data-semantic-target="main"
+                aria-pressed="false">&lt;main&gt;</button>
+              <button type="button" class="semantic-button" data-semantic-target="article"
+                aria-pressed="false">&lt;article&gt;</button>
+              <button type="button" class="semantic-button" data-semantic-target="section"
+                aria-pressed="false">&lt;section&gt;</button>
+              <button type="button" class="semantic-button" data-semantic-target="aside"
+                aria-pressed="false">&lt;aside&gt;</button>
+              <button type="button" class="semantic-button" data-semantic-target="form"
+                aria-pressed="false">&lt;form&gt;</button>
+              <button type="button" class="semantic-button" data-semantic-target="footer"
+                aria-pressed="false">&lt;footer&gt;</button>
+            </div>
+
+            <div class="mini-browser" aria-label="Example semantic webpage">
+              <div class="mini-browser-bar" aria-hidden="true">
+                <span></span><span></span><span></span><strong>semantic-page.html</strong>
+              </div>
+              <div class="mini-page">
+                <header class="semantic-region is-highlighted" data-semantic-region="header">
+                  <span class="region-tag">header</span>
+                  <strong>Developer Journal</strong>
+                  <nav class="semantic-region" data-semantic-region="nav" aria-label="Example website navigation">
+                    <span class="region-tag">nav</span>
+                    <a href="#demo-html">Home</a><a href="#demo-html">Articles</a>
+                  </nav>
+                </header>
+                <div class="semantic-region semantic-main" data-semantic-region="main"
+                  aria-label="Visual representation of a main element">
+                  <span class="region-tag">main</span>
+                  <article class="semantic-region" data-semantic-region="article">
+                    <span class="region-tag">article</span>
+                    <h4>Learning semantic HTML</h4>
+                    <section class="semantic-region" data-semantic-region="section">
+                      <span class="region-tag">section</span>
+                      <p>A grouped part of the article.</p>
+                    </section>
+                  </article>
+                  <aside class="semantic-region" data-semantic-region="aside">
+                    <span class="region-tag">aside</span>
+                    <p>Related reading</p>
+                  </aside>
+                  <form class="semantic-region mini-form" data-semantic-region="form">
+                    <span class="region-tag">form</span>
+                    <label for="mini-email">Email</label>
+                    <input id="mini-email" type="email" placeholder="name@example.com">
+                  </form>
+                </div>
+                <footer class="semantic-region" data-semantic-region="footer">
+                  <span class="region-tag">footer</span>
+                  <small>Portfolio footer</small>
+                </footer>
+              </div>
+            </div>
+          </div>
+
+          <div class="semantic-information" id="semantic-information" aria-live="polite" aria-atomic="true">
+            <div><span>Selected element</span><strong id="semantic-name">&lt;header&gt;</strong></div>
+            <div><span>Purpose</span>
+              <p id="semantic-purpose">Introduces a page or section and can contain a heading, logo or introductory
+                content.</p>
+            </div>
+            <div><span>Example syntax</span><code id="semantic-syntax">&lt;header&gt;...&lt;/header&gt;</code></div>
+            <div><span>Semantic benefit</span>
+              <p id="semantic-benefit">It identifies introductory content more clearly than a generic div.</p>
+            </div>
+            <div><span>Accessibility benefit</span>
+              <p id="semantic-accessibility">A page-level header may be exposed as a banner landmark.</p>
+            </div>
+          </div>
+
+          <div class="code-previewer-container mt-4">
+            <div class="code-toolbar"><span>HTML</span><button type="button" class="copy-code"
+                data-copy-target="html-code-snippet">Copy code</button></div>
+            <pre><code id="html-code-snippet">&lt;<span class="token-class">article</span>&gt;
+  &lt;<span class="token-class">h2</span>&gt;Semantic HTML&lt;/<span class="token-class">h2</span>&gt;
+  &lt;<span class="token-class">section</span> <span class="token-attr">aria-labelledby</span>=<span class="token-string">"benefits-title"</span>&gt;
+    &lt;<span class="token-class">h3</span> <span class="token-attr">id</span>=<span class="token-string">"benefits-title"</span>&gt;Benefits&lt;/<span class="token-class">h3</span>&gt;
+    &lt;<span class="token-class">p</span>&gt;Meaningful elements improve structure.&lt;/<span class="token-class">p</span>&gt;
+  &lt;/<span class="token-class">section</span>&gt;
+&lt;/<span class="token-class">article</span>&gt;</code></pre>
+          </div>
+
+          <div class="explanation-panel mt-3" id="html-explanation" aria-live="polite" aria-atomic="true">
+            <div class="explanation-panel-heading"><span class="explanation-badge">Live explanation</span><strong>What
+                did the explorer do?</strong></div>
+            <dl class="explanation-grid">
+              <div>
+                <dt>Action</dt>
+                <dd data-explanation="action">The header element is selected.</dd>
+              </div>
+              <div>
+                <dt>What changed?</dt>
+                <dd data-explanation="change">The corresponding header region is outlined and labelled.</dd>
+              </div>
+              <div>
+                <dt>How was it implemented?</dt>
+                <dd data-explanation="implementation">JavaScript matched the button’s data attribute to the example
+                  region.</dd>
+              </div>
+              <div>
+                <dt>Concept demonstrated</dt>
+                <dd data-explanation="concept">Semantic HTML gives structural meaning to content.</dd>
+              </div>
+            </dl>
+          </div>
+
+          <section class="contact-example" aria-labelledby="contact-example-title">
+            <div>
+              <p class="demo-label">Accessible form example</p>
+              <h4 id="contact-example-title">Contact form</h4>
+              <p>Labels, input types, required attributes and helpful messages make the form easier to understand and
+                validate.</p>
+            </div>
+            <form id="contact-form" novalidate>
+              <div class="form-grid">
+                <div class="form-field">
+                  <label for="contact-name"><i data-lucide="user" class="label-icon"></i> Name <span
+                      aria-hidden="true">*</span></label>
+                  <input class="form-control" id="contact-name" name="name" type="text" autocomplete="name" required
+                    aria-describedby="contact-name-error">
+                  <span class="field-error" id="contact-name-error"></span>
+                </div>
+                <div class="form-field">
+                  <label for="contact-email"><i data-lucide="mail" class="label-icon"></i> Email <span
+                      aria-hidden="true">*</span></label>
+                  <input class="form-control" id="contact-email" name="email" type="email" autocomplete="email" required
+                    aria-describedby="contact-email-error">
+                  <span class="field-error" id="contact-email-error"></span>
+                </div>
+                <div class="form-field form-field-wide">
+                  <label for="contact-subject"><i data-lucide="help-circle" class="label-icon"></i> Subject</label>
+                  <select class="form-select" id="contact-subject" name="subject">
+                    <option value="Portfolio feedback">Portfolio feedback</option>
+                    <option value="Project enquiry">Project enquiry</option>
+                    <option value="General question">General question</option>
+                  </select>
+                </div>
+                <div class="form-field form-field-wide">
+                  <label for="contact-message"><i data-lucide="message-square" class="label-icon"></i> Message <span
+                      aria-hidden="true">*</span></label>
+                  <textarea class="form-control" id="contact-message" name="message" rows="4" required minlength="10"
+                    aria-describedby="contact-message-help contact-message-error"></textarea>
+                  <small id="contact-message-help">Enter at least 10 characters. This demonstration does not send data
+                    to a server.</small>
+                  <span class="field-error" id="contact-message-error"></span>
+                </div>
+              </div>
+              <button class="btn btn-brand-secondary" type="submit"><i data-lucide="check-circle" class="btn-icon"></i>
+                Validate form</button>
+              <p class="form-status" id="contact-form-status" aria-live="polite"></p>
+            </form>
+          </section>
+
+          <div class="reflection-row">
+            <div>
+              <h4>What I learned</h4>
+              <p>I learned that HTML is not only a collection of containers. Choosing the right element communicates the
+                purpose of content before visual styling is applied.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         3. CSS
+         ================================================================ -->
+    <section class="portfolio-section section-css" id="css" aria-labelledby="css-title">
+      <div class="container-xl">
+        <header class="section-heading reveal-on-scroll">
+          <div class="section-number" aria-hidden="true">03</div>
+          <div>
+            <p class="section-kicker">Presentation and responsive layout</p>
+            <h2 id="css-title">CSS</h2>
+            <p class="section-intro">CSS controls visual presentation while keeping design rules separate from the
+              page’s semantic structure.</p>
+          </div>
+        </header>
+
+        <div class="learning-copy reveal-on-scroll">
+          <div>
+            <h3>From selectors to responsive systems</h3>
+            <p>CSS stands for <strong>Cascading Style Sheets</strong>. A selector targets elements, and declarations
+              pair properties with values. Classes create reusable patterns, while IDs should normally identify one
+              unique element. When rules conflict, the cascade considers origin, importance, specificity and source
+              order. Some values, such as text colour and font family, can be inherited by descendants.</p>
+            <p>The box model treats every element as content surrounded by padding, border and margin. Flexbox is useful
+              for arranging items in one main direction, while Grid controls rows and columns. Media queries adapt those
+              layouts at different viewport widths. Transitions can communicate state changes, but they should remain
+              subtle and respect a user’s reduced-motion preference.</p>
+          </div>
+          <aside class="learning-note">
+            <h3>Separation of concerns</h3>
+            <p>I use class-based CSS instead of repeated inline styles. This makes visual decisions reusable, easier to
+              test and simpler to change across the whole portfolio.</p>
+          </aside>
+        </div>
+
+        <article class="demo-shell reveal-on-scroll" id="demo-css" aria-labelledby="css-demo-title">
+          <div class="demo-heading">
+            <div>
+              <p class="demo-label">Working demonstration · CSS Features</p>
+              <h3 id="css-demo-title">CSS Playground & Showcase</h3>
+              <p>Interact with core CSS features used on this website: layouts, box modeling, and transitions.</p>
+            </div>
+          </div>
+
+          <nav class="navbar navbar-expand-md demo-navbar mb-4" aria-label="CSS demonstration navigation">
+            <div class="container-fluid">
+              <span class="navbar-brand"><i data-lucide="palette"></i> CSSPlayground</span>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#css-navbar-content" aria-controls="css-navbar-content" aria-expanded="false"
+                aria-label="Toggle CSS navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="css-navbar-content">
+                <ul class="navbar-nav ms-auto" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="boxmodel-tab" data-bs-toggle="tab"
+                      data-bs-target="#tab-boxmodel" type="button" role="tab" aria-controls="tab-boxmodel"
+                      aria-selected="true"><i data-lucide="square"></i> Box Model</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="flexgrid-tab" data-bs-toggle="tab" data-bs-target="#tab-flexgrid"
+                      type="button" role="tab" aria-controls="tab-flexgrid" aria-selected="false"><i
+                        data-lucide="columns"></i> Layout (Flex/Grid)</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="animation-tab" data-bs-toggle="tab" data-bs-target="#tab-animation"
+                      type="button" role="tab" aria-controls="tab-animation" aria-selected="false"><i
+                        data-lucide="activity"></i> Animations</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          <div class="tab-content" id="css-tab-content">
+            <!-- Tab 1: Box Model -->
+            <div class="tab-pane fade show active" id="tab-boxmodel" role="tabpanel" aria-labelledby="boxmodel-tab">
+              <div class="box-model-visualizer-grid">
+                <div class="box-model-info">
+                  <div class="box-model-controls" role="group" aria-label="Select a box model layer">
+                    <button type="button" class="box-model-button is-selected" data-box-layer="content"
+                      aria-pressed="true"><i data-lucide="align-justify"></i> Content</button>
+                    <button type="button" class="box-model-button" data-box-layer="padding" aria-pressed="false"><i
+                        data-lucide="minimize"></i> Padding</button>
+                    <button type="button" class="box-model-button" data-box-layer="border" aria-pressed="false"><i
+                        data-lucide="square"></i> Border</button>
+                    <button type="button" class="box-model-button" data-box-layer="margin" aria-pressed="false"><i
+                        data-lucide="maximize"></i> Margin</button>
+                  </div>
+                  <p class="box-model-description" id="box-model-description" aria-live="polite">
+                    <strong>Content:</strong> the text, image or other material inside the element.
+                  </p>
+                </div>
+
+                <div class="box-model-diagram-wrap">
+                  <div class="box-model-diagram" data-active-layer="content" aria-label="Box model diagram">
+                    <div class="box-layer box-margin"><span>Margin</span>
+                      <div class="box-layer box-border"><span>Border</span>
+                        <div class="box-layer box-padding"><span>Padding</span>
+                          <div class="box-layer box-content"><span>Content</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab 2: Flexbox & Grid Layouts -->
+            <div class="tab-pane fade" id="tab-flexgrid" role="tabpanel" aria-labelledby="flexgrid-tab">
+              <div class="d-flex flex-wrap gap-2 justify-content-between align-items-center mb-3">
+                <span class="text-muted small">Compare Flexbox and CSS Grid layout models in real time.</span>
+                <div class="css-playground-controls" role="group" aria-label="Choose layout display mode">
+                  <button class="btn btn-sm btn-outline-dark active" id="btn-toggle-flex" type="button">Flexbox</button>
+                  <button class="btn btn-sm btn-outline-dark" id="btn-toggle-grid" type="button">CSS Grid</button>
+                </div>
+              </div>
+              <div class="layout-demo-container flex-mode" id="layout-demo-container">
+                <div class="layout-demo-item">Item 1</div>
+                <div class="layout-demo-item">Item 2</div>
+                <div class="layout-demo-item">Item 3</div>
+                <div class="layout-demo-item">Item 4</div>
+              </div>
+              <div class="layout-explanation mt-3">
+                <p id="layout-explanation-text"><strong>Flexbox (Flexible Box Layout):</strong> One-dimensional layout
+                  model. Great for aligning elements in a row or column, distributing space dynamically.</p>
+              </div>
+            </div>
+
+            <!-- Tab 3: Animations & Transitions -->
+            <div class="tab-pane fade" id="tab-animation" role="tabpanel" aria-labelledby="animation-tab">
+              <div class="d-flex flex-wrap gap-2 justify-content-between align-items-center mb-3">
+                <span class="text-muted small">Test modern CSS keyframes and spring physics transitions.</span>
+                <div class="css-playground-controls" role="group" aria-label="Choose animation preview">
+                  <button class="btn btn-sm btn-outline-dark" id="btn-animate-liquid" type="button">Morph Shape</button>
+                  <button class="btn btn-sm btn-outline-dark" id="btn-animate-float" type="button">Float Orb</button>
+                </div>
+              </div>
+              <div class="animation-demo-wrapper">
+                <div class="animation-demo-element" id="animation-demo-element">
+                  <span>CSS Physics</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Code Previewer (Directly Visible) -->
+          <div class="code-previewer-container mt-4">
+            <div class="code-toolbar"><span>CSS</span><button type="button" class="copy-code"
+                data-copy-target="css-code-snippet">Copy code</button></div>
+            <pre><code id="css-code-snippet">/* Box Model: Content layer */
+.box-content {
+  width: 100%;
+  min-height: 5.5rem;
+  padding: 1.25rem;
+  border-style: solid;
+  background: rgba(144, 97, 249, 0.2); /* Saturated lavender tint */
+  border-radius: 8px;
+}</code></pre>
+          </div>
+
+          <div class="explanation-panel mt-3" id="css-explanation" aria-live="polite" aria-atomic="true">
+            <div class="explanation-panel-heading"><span class="explanation-badge">Live explanation</span><strong>What
+                is highlighted?</strong></div>
+            <dl class="explanation-grid">
+              <div>
+                <dt>Action</dt>
+                <dd data-explanation="action">The content layer is selected.</dd>
+              </div>
+              <div>
+                <dt>What changed?</dt>
+                <dd data-explanation="change">The inner content region of the diagram is active and scaled.</dd>
+              </div>
+              <div>
+                <dt>How was it implemented?</dt>
+                <dd data-explanation="implementation">JavaScript updates data-active-layer which changes matching CSS
+                  rules.</dd>
+              </div>
+              <div>
+                <dt>Concept demonstrated</dt>
+                <dd data-explanation="concept">Concentric layout boxes: Content, Padding, Border, Margin.</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="reflection-row">
+            <div>
+              <h4>What I learned</h4>
+              <p>I learned to treat CSS as a reusable system rather than a list of isolated declarations. The box model,
+                Flexbox, and Grid coordinates layout structure, while transitions add dynamic liquid physics.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         4. BOOTSTRAP
+         ================================================================ -->
+    <section class="portfolio-section section-bootstrap" id="bootstrap" aria-labelledby="bootstrap-title">
+      <div class="container-xl">
+        <header class="section-heading reveal-on-scroll">
+          <div class="section-number" aria-hidden="true">04</div>
+          <div>
+            <p class="section-kicker">Frameworks and reusable components</p>
+            <h2 id="bootstrap-title">Bootstrap Framework</h2>
+            <p class="section-intro">Bootstrap provides a tested responsive grid, utility classes and interactive
+              components that can speed up interface development.</p>
+          </div>
+        </header>
+
+        <div class="learning-copy reveal-on-scroll">
+          <div>
+            <h3>Using a framework deliberately</h3>
+            <p>Bootstrap is a front-end framework containing ready-made CSS classes and JavaScript components. Its grid
+              uses containers, rows and columns. Breakpoint prefixes such as <code>md</code> and <code>lg</code> apply
+              rules only from a specified viewport width. Utility classes provide focused changes for spacing, display,
+              alignment and other common needs.</p>
+            <p>Components such as navbars, alerts, accordions and modals include established structure and behaviour.
+              Bootstrap’s JavaScript bundle controls interactions such as collapsing and opening. The framework improves
+              speed and consistency, but it does not replace semantic HTML, accessibility testing or design judgement. A
+              site can look generic if the defaults are not customised, and unused framework code may add more CSS than
+              a small project needs.</p>
+          </div>
+          <aside class="learning-note">
+            <h3>Bootstrap versus custom CSS</h3>
+            <p>I use Bootstrap for its layout system and component behaviour, then use my own stylesheet for the cyan,
+              aqua, magenta and pink visual identity.</p>
+          </aside>
+        </div>
+
+        <article class="demo-shell bootstrap-showcase reveal-on-scroll" id="demo-bootstrap"
+          aria-labelledby="bootstrap-demo-title">
+          <div class="demo-heading">
+            <div>
+              <p class="demo-label">Working demonstration · Bootstrap 5</p>
+              <h3 id="bootstrap-demo-title">Bootstrap Component Showcase</h3>
+              <p>The controls below use genuine Bootstrap grid, utility and JavaScript component classes.</p>
+            </div>
+            <div class="demo-actions">
+              <!-- Empty action container since buttons moved inside tabs -->
+            </div>
+          </div>
+
+          <nav class="navbar navbar-expand-md demo-navbar mb-4" aria-label="Bootstrap demonstration navigation">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#demo-bootstrap"><i data-lucide="package"></i> DemoNav</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#demo-navbar-content" aria-controls="demo-navbar-content" aria-expanded="false"
+                aria-label="Toggle demonstration navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="demo-navbar-content">
+                <ul class="navbar-nav ms-auto" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="overview-tab" data-bs-toggle="tab"
+                      data-bs-target="#tab-overview" type="button" role="tab" aria-controls="tab-overview"
+                      aria-selected="true"><i data-lucide="file-text"></i> Form &amp; Overlays</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="cards-tab" data-bs-toggle="tab" data-bs-target="#tab-cards"
+                      type="button" role="tab" aria-controls="tab-cards" aria-selected="false"><i
+                        data-lucide="layout-grid"></i> Cards Grid</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="accordion-tab" data-bs-toggle="tab" data-bs-target="#tab-accordion"
+                      type="button" role="tab" aria-controls="tab-accordion" aria-selected="false"><i
+                        data-lucide="help-circle"></i> Accordion FAQ</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          <div class="tab-content" id="bootstrap-tab-content">
+            <!-- Tab 1: Form & Overlays -->
+            <div class="tab-pane fade show active" id="tab-overview" role="tabpanel" aria-labelledby="overview-tab">
+              <div class="d-flex flex-wrap gap-2 justify-content-between align-items-center mb-3">
+                <span class="text-muted small">Interact with Bootstrap modals, alert dialogs, and native forms.</span>
+                <div class="demo-actions">
+                  <button class="btn btn-brand-primary" type="button" data-bs-toggle="modal"
+                    data-bs-target="#portfolio-modal"><i data-lucide="external-link"></i> Open modal</button>
+                  <button class="btn btn-brand-secondary" type="button" id="show-bootstrap-alert"><i
+                      data-lucide="alert-circle"></i> Show alert</button>
+                </div>
+              </div>
+
+              <div id="bootstrap-alert-region" aria-live="polite"></div>
+
+              <form class="bootstrap-form-demo mt-3 p-3 p-md-4" id="bootstrap-form-demo" novalidate>
+                <div class="row g-3 align-items-end">
+                  <div class="col-12 col-lg-7">
+                    <label class="form-label fw-bold" for="bootstrap-email">Project email</label>
+                    <div class="input-group">
+                      <span class="input-group-text" aria-hidden="true">@</span>
+                      <input class="form-control" id="bootstrap-email" type="email" placeholder="developer@example.com"
+                        required aria-describedby="bootstrap-form-status">
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-3">
+                    <label class="form-label fw-bold" for="bootstrap-role">Role</label>
+                    <select class="form-select" id="bootstrap-role">
+                      <option>Front-end</option>
+                      <option>Back-end</option>
+                      <option>Full stack</option>
+                    </select>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-2 d-grid">
+                    <button class="btn btn-brand-primary" type="submit"><i data-lucide="check-square"></i> Check
+                      form</button>
+                  </div>
+                  <div class="col-12 d-flex flex-wrap gap-3 align-items-center">
+                    <div class="form-check mb-0">
+                      <input class="form-check-input" id="bootstrap-updates" type="checkbox">
+                      <label class="form-check-label" for="bootstrap-updates">Send project updates</label>
+                    </div>
+                    <span class="badge brand-badge d-none d-md-inline">Visible from the md breakpoint</span>
+                    <span class="bootstrap-form-status" id="bootstrap-form-status" aria-live="polite">Bootstrap form
+                      controls are ready.</span>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <!-- Tab 2: Cards Grid -->
+            <div class="tab-pane fade" id="tab-cards" role="tabpanel" aria-labelledby="cards-tab">
+              <div class="d-flex flex-wrap gap-2 justify-content-between align-items-center mb-3">
+                <span class="text-muted small">Cards are arranged using Bootstrap's responsive grid columns.</span>
+                <button class="btn btn-outline-dark" type="button" id="toggle-bootstrap-spacing" aria-pressed="false"><i
+                    data-lucide="minimize-2"></i> Compact cards</button>
+              </div>
+
+              <div class="row g-4 mt-1" id="bootstrap-cards">
+                <div class="col-12 col-md-6 col-lg-4 bootstrap-card-wrap">
+                  <article class="card h-100 brand-bootstrap-card">
+                    <div class="card-body p-4">
+                      <span class="badge brand-badge mb-3"><i data-lucide="file-code-2" class="badge-icon"></i>
+                        HTML</span>
+                      <h4 class="card-title">Semantic structure</h4>
+                      <p class="card-text">Native elements create a meaningful foundation for every Bootstrap component.
+                      </p>
+                      <button class="btn btn-sm btn-brand-primary" type="button" data-card-action="HTML card"><i
+                          data-lucide="zoom-in"></i> Inspect component</button>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 bootstrap-card-wrap">
+                  <article class="card h-100 brand-bootstrap-card">
+                    <div class="card-body p-4">
+                      <span class="badge brand-badge mb-3"><i data-lucide="columns" class="badge-icon"></i> Grid</span>
+                      <h4 class="card-title">Responsive columns</h4>
+                      <p class="card-text">Breakpoint classes change the number of columns without a separate custom
+                        media query.</p>
+                      <button class="btn btn-sm btn-brand-primary" type="button" data-card-action="Grid card"><i
+                          data-lucide="zoom-in"></i> Inspect component</button>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 bootstrap-card-wrap">
+                  <article class="card h-100 brand-bootstrap-card">
+                    <div class="card-body p-4">
+                      <span class="badge brand-badge mb-3"><i data-lucide="sliders" class="badge-icon"></i>
+                        Utilities</span>
+                      <h4 class="card-title">Focused class rules</h4>
+                      <p class="card-text">Classes such as <code>p-4</code>, <code>g-4</code> and <code>h-100</code>
+                        apply predictable single-purpose styles.</p>
+                      <button class="btn btn-sm btn-brand-primary" type="button" data-card-action="Utility card"><i
+                          data-lucide="zoom-in"></i> Inspect component</button>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab 3: Accordion FAQ -->
+            <div class="tab-pane fade" id="tab-accordion" role="tabpanel" aria-labelledby="accordion-tab">
+              <div class="mb-3">
+                <span class="text-muted small">Standard Bootstrap collapse accordion panel.</span>
+              </div>
+
+              <div class="accordion brand-accordion mt-2" id="bootstrap-accordion">
+                <div class="accordion-item">
+                  <h4 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#breakpoint-answer" aria-expanded="true" aria-controls="breakpoint-answer">What do
+                      the column classes mean?</button>
+                  </h4>
+                  <div id="breakpoint-answer" class="accordion-collapse collapse show"
+                    data-bs-parent="#bootstrap-accordion">
+                    <div class="accordion-body"><code>col-12</code> fills the row on all screen sizes.
+                      <code>col-md-6</code> uses half of the row from the medium breakpoint, and <code>col-lg-4</code>
+                      uses one third from the large breakpoint.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h4 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#utility-answer" aria-expanded="false" aria-controls="utility-answer">What is a
+                      Bootstrap utility?</button>
+                  </h4>
+                  <div id="utility-answer" class="accordion-collapse collapse" data-bs-parent="#bootstrap-accordion">
+                    <div class="accordion-body">A utility is a small class with a focused purpose. For example,
+                      <code>mt-4</code> adds top margin and <code>d-none</code> changes display.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h4 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#limitation-answer" aria-expanded="false" aria-controls="limitation-answer">What
+                      is one limitation?</button>
+                  </h4>
+                  <div id="limitation-answer" class="accordion-collapse collapse" data-bs-parent="#bootstrap-accordion">
+                    <div class="accordion-body">Without deliberate custom styling, many Bootstrap projects can look
+                      similar. This portfolio overrides visual details without changing the library files.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Code Previewer (Directly Visible) -->
+          <div class="code-previewer-container mt-4">
+            <div class="code-toolbar"><span>Bootstrap</span><button type="button" class="copy-code"
+                data-copy-target="bootstrap-code-snippet">Copy code</button></div>
+            <pre><code id="bootstrap-code-snippet">&lt;div class="row g-4"&gt;
+  &lt;div class="col-12 col-md-6 col-lg-4"&gt;
+    &lt;article class="card h-100"&gt;...&lt;/article>
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+
+          <div class="explanation-panel mt-3" id="bootstrap-explanation" aria-live="polite" aria-atomic="true">
+            <div class="explanation-panel-heading"><span class="explanation-badge">Live explanation</span><strong>What
+                did Bootstrap do?</strong></div>
+            <dl class="explanation-grid">
+              <div>
+                <dt>Action</dt>
+                <dd data-explanation="action">The component showcase is ready.</dd>
+              </div>
+              <div>
+                <dt>What changed?</dt>
+                <dd data-explanation="change">Cards are arranged by Bootstrap’s responsive grid.</dd>
+              </div>
+              <div>
+                <dt>How was it implemented?</dt>
+                <dd data-explanation="implementation">The row contains col-12, col-md-6 and col-lg-4 columns.</dd>
+              </div>
+              <div>
+                <dt>Concept demonstrated</dt>
+                <dd data-explanation="concept">Framework classes create reusable responsive behaviour.</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="reflection-row">
+            <div>
+              <h4>What I learned</h4>
+              <p>I learned that Bootstrap is most useful when I understand the HTML and CSS underneath it. I can use the
+                framework for predictable behaviour while retaining control of the project’s identity.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         5. JAVASCRIPT
+         ================================================================ -->
+    <section class="portfolio-section section-javascript" id="javascript" aria-labelledby="javascript-title">
+      <div class="container-xl">
+        <header class="section-heading reveal-on-scroll">
+          <div class="section-number" aria-hidden="true">05</div>
+          <div>
+            <p class="section-kicker">Logic, events and DOM updates</p>
+            <h2 id="javascript-title">JavaScript</h2>
+            <p class="section-intro">JavaScript turns a static document into an application that can react to input,
+              manage state and update the page.</p>
+          </div>
+        </header>
+
+        <div class="learning-copy reveal-on-scroll">
+          <div>
+            <h3>Adding behaviour to the interface</h3>
+            <p>JavaScript stores values in variables using <code>const</code> when a binding should not be reassigned
+              and <code>let</code> when it must change. Values have data types, including strings, numbers, booleans,
+              arrays and objects. Functions group reusable logic, parameters receive values, and return statements send
+              results back. Conditions choose between paths, while loops and array methods process collections.</p>
+            <p>In a browser, JavaScript can select elements from the DOM and listen for events such as
+              <code>submit</code> or <code>click</code>. It can validate input, update text, create elements and change
+              classes. The task manager below keeps its application data in an array of objects, filters that array to
+              decide what to display, and stores a JSON version in <code>localStorage</code> so tasks survive a refresh.
+            </p>
+          </div>
+          <aside class="learning-note">
+            <h3>Data flow</h3>
+            <p>I keep the task array as the source of truth: an event changes the data, the data is saved, and a render
+              function updates the DOM to match it.</p>
+          </aside>
+        </div>
+
+        <article class="demo-shell reveal-on-scroll" id="demo-javascript" aria-labelledby="javascript-demo-title">
+          <div class="demo-heading">
+            <div>
+              <p class="demo-label">Working demonstration · vanilla JavaScript</p>
+              <h3 id="javascript-demo-title">Task Manager</h3>
+              <p>Add, complete, filter and delete tasks. The list is saved in this browser using localStorage.</p>
+            </div>
+          </div>
+
+          <div class="task-app">
+            <form class="task-form" id="task-form" novalidate>
+              <div class="task-input-group">
+                <label for="task-input"><i data-lucide="clipboard-list"></i> Task description</label>
+                <input class="form-control" id="task-input" name="task" type="text" maxlength="120" autocomplete="off"
+                  placeholder="For example: Test the mobile layout" aria-describedby="task-error">
+                <span class="field-error" id="task-error"></span>
+              </div>
+              <div class="task-category-group">
+                <label for="task-category"><i data-lucide="tag"></i> Category</label>
+                <select class="form-select" id="task-category" name="category">
+                  <option value="Study">Study</option>
+                  <option value="Development">Development</option>
+                  <option value="Testing">Testing</option>
+                  <option value="Personal">Personal</option>
+                </select>
+              </div>
+              <button class="btn btn-brand-primary task-submit" type="submit"><i data-lucide="plus"></i> Add
+                task</button>
+            </form>
+
+            <div class="task-toolbar">
+              <div class="task-filters" role="group" aria-label="Filter tasks">
+                <button type="button" class="task-filter is-selected" data-task-filter="all" aria-pressed="true"><i
+                    data-lucide="list"></i> All</button>
+                <button type="button" class="task-filter" data-task-filter="active" aria-pressed="false"><i
+                    data-lucide="circle"></i> Active</button>
+                <button type="button" class="task-filter" data-task-filter="completed" aria-pressed="false"><i
+                    data-lucide="check-circle"></i> Completed</button>
+              </div>
+              <p class="task-count" id="task-count" aria-live="polite">0 tasks remaining</p>
+            </div>
+
+            <div class="task-list-wrap">
+              <ul class="task-list" id="task-list" aria-label="Tasks"></ul>
+              <div class="task-empty" id="task-empty-state">
+                <span aria-hidden="true">✓</span>
+                <strong>No tasks to display</strong>
+                <p>Add a task or choose another filter.</p>
+              </div>
+            </div>
+
+            <div class="task-footer">
+              <span id="task-storage-status"><i data-lucide="hard-drive"></i> Storage ready</span>
+              <button class="btn btn-outline-dark btn-sm" id="clear-completed" type="button" disabled><i
+                  data-lucide="trash-2"></i> Clear completed</button>
+            </div>
+          </div>
+
+          <!-- Code Previewer (Directly Visible) -->
+          <div class="code-previewer-container mt-4">
+            <div class="code-toolbar"><span>JavaScript</span><button type="button" class="copy-code"
+                data-copy-target="javascript-code-snippet">Copy code</button></div>
+            <pre><code id="javascript-code-snippet">const task = {
+  id: crypto.randomUUID(),
+  text: taskInput.value.trim(),
+  category: categoryInput.value,
+  completed: false
+};
+
+tasks = [...tasks, task];
+saveTasks();
+renderTasks();</code></pre>
+          </div>
+
+          <div class="explanation-panel mt-3" id="javascript-explanation" aria-live="polite" aria-atomic="true">
+            <div class="explanation-panel-heading"><span class="explanation-badge">What JavaScript just
+                did</span><strong>Application activity</strong></div>
+            <dl class="explanation-grid">
+              <div>
+                <dt>Action</dt>
+                <dd data-explanation="action">The task manager loaded.</dd>
+              </div>
+              <div>
+                <dt>What changed?</dt>
+                <dd data-explanation="change">Stored tasks were read and the list was rendered.</dd>
+              </div>
+              <div>
+                <dt>How was it implemented?</dt>
+                <dd data-explanation="implementation">JSON.parse ran inside try/catch, then renderTasks created safe DOM
+                  nodes.</dd>
+              </div>
+              <div>
+                <dt>Concept demonstrated</dt>
+                <dd data-explanation="concept">Application state, persistence and DOM rendering.</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="reflection-row">
+            <div>
+              <h4>What I learned</h4>
+              <p>This application showed me why data and interface rendering should be separated. Changing the array
+                first makes filtering, persistence and DOM updates more predictable.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container-xl footer-grid">
+      <div><strong>CET138 Full Stack Development</strong>
+        <p>ePortfolio by Aashin Lamichhane · Email: ctit25a.asn@ismt.edu.np</p>
+      </div>
+      <div>
+        <p>Built with semantic HTML5, custom CSS, Bootstrap 5 and vanilla JavaScript.</p><a href="#top">Back to top
+          ↑</a>
+      </div>
+    </div>
+    <div class="container-xl footer-bottom"><span>© <span id="current-year"></span></span></div>
+  </footer>
+
+  <div class="modal fade" id="portfolio-modal" tabindex="-1" aria-labelledby="portfolio-modal-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content brand-modal">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="portfolio-modal-title">Bootstrap modal example</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Bootstrap’s JavaScript bundle manages opening, focus, the backdrop and keyboard dismissal. Custom CSS
+            supplies this portfolio’s visual identity.</p>
+          <div class="modal-code"><code>data-bs-toggle="modal"</code><code>data-bs-target="#portfolio-modal"</code>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-brand-primary" data-bs-dismiss="modal">Understood</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Up/Down Quick Navigation Buttons -->
+  <div class="scroll-navigation-stack" role="group" aria-label="Quick page navigation">
+    <button type="button" class="btn-scroll-nav" id="scroll-to-top-btn" aria-label="Scroll to top">
+      <i data-lucide="chevron-up"></i>
+    </button>
+    <button type="button" class="btn-scroll-nav" id="scroll-to-bottom-btn" aria-label="Scroll to bottom">
+      <i data-lucide="chevron-down"></i>
+    </button>
+  </div>
+
+  <script src="bootstrap/js/bootstrap.bundle.min.js"
+    onerror="this.onerror=null;this.src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js';"></script>
+  <!-- Lucide Icons Library -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
